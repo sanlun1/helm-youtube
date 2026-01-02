@@ -96,7 +96,8 @@
 	     (action . (lambda (candidate)
 			 ;; (message-box "%s" (candidate))
 			 (helm-youtube-playvideo (cdr (assoc candidate *results*)))
-			 )))))
+			 ))
+       (migemo . t))))
       (helm :sources '(you-source)))))
 
 (provide 'helm-youtube)
